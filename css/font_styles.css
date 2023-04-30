@@ -1,0 +1,24 @@
+header{
+    text-align: center;
+    font: bold 15px Georgia, Tahoma, Sans-serif;
+}
+
+.story{
+    font: 1.2rem Georgia, Tahoma, Sans-serif;
+    text-decoration: underline rgb(192, 203, 213);
+    background-color: rgb(244, 243, 244);
+    
+    
+}
+
+h4 {
+    font: 1.2rem Georgia, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+.ed-links {
+    font: 2rem Georgia;
+    text-align: center;
+
+}

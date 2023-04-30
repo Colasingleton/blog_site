@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/main.css" />
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+        <title>Blog Homepage page</title>
+        
+    </head>
+    <body>
+
+<!--navbar-->
+        <nav>
+            <ul>
+                <li><a href="#gallery">JOURNEY</a></li>
+                <li><a href="#story">ABOUT ME</a></li>
+                <li><a href="#footer">RESOURCES</a></li>
+                <li><a href="#socials">CONNECT</a></li>
+            </ul>
+        </nav>
+<header><h1>How I Became A Software Engineer</h1></header> 
+
+<!--main grid container-->
+<div class="container">
+    
+    <!--main image container-->
+    <div id="card" class="card">
+        <img id ="selfie" src="/static/cola.jpg" alt="selfie">
+        
+        
+            <caption><strong>Cola Singleton<br><q>Software Engineer</q></strong></caption>
+        <!--blog post button-->
+        <a href ="/html/blog_post.html"><button id= "card-btn" class="card-btn">Blog Post...</button></a>
+        
+    </div>
+
+    <!--story was swapped gallery for aesthetics-->
+    <div id ="story" class="story">
+        <div class="snippet"><p><strong>About Me...</strong><br><br>Hi there, I’m <em>Cola</em>. An aspiring <q><u>software engineer</u></q> that’s taking the self-taught route.</p></div>
+        <div class="snippet"><p>Although it can seem like a daunting journey to some, I find learning to be more efficient for myself while in search and discovery.</p></div> 
+        <div class="snippet"><p>There’s so much free information out there, and utilizing those resources first was the best option for me. <em>Check out the free education links below.</em></p></div>
+    </div>
+
+    <!--images are now static-->
+    <!--Note: number three was removed and I haven't updated the numbers-->
+    <div id ="gallery" class="gallery">
+        <div><h4><u>A few steps I took along the way.</u></h4></div>
+        <div class="pic one"><h4>Pick something and stick to it.</h4><img src="/static/pick.png" alt="pointing photo"></div>
+        <div class="pic two"><h4>Research and apply.</h4><img src="/static/research.png" alt="research"></div>
+        <div class="pic four"><h4>Build a network</h4><img src="/static/network.png" alt="network"></div>
+        <div class="pic five"><h4>Create something of your own.</h4><img src="/static/create.png" alt="create"></div>
+        <div class="pic six"><h4>Keep coding!</h4><img src="/static/persist.png" alt="persist"></div>
+</div>
+
+<div id="footer" class="footer"> 
+
+    <!--gallery of favorite free sites & nested grid-->
+    <div class="nested-grid">
+    <div><a href="https://www.freecodecamp.org/learn/"><img class ="logo" src="/static/FreeCodeCamp_logo.png" alt="FreeCodeCamp"></a></div>
+    <div><a href="https://www.edx.org/school/edx"><img class ="logo" src="/static/edX_logo.png" alt="edX"></a></div>
+    <div><a href="https://www.theodinproject.com/"><img class ="logo" src="/static/odin_project_logo.png" alt="The Odin project"></a></div>
+</div>
+</div>
+</div>
+
+<!--button container/footer-->
+<footer class="btn-container">
+<a href ="https://www.linkedin.com/mwlite/in/colasingleton"><button id="socials">LinkedIn</button></a>
+<a href="https://github.com/Colasingleton?tab=repositories"><button id="socials">GitHub</button></a>
+</footer> 
+    </body>
+</html>

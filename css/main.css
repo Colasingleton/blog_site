@@ -1,0 +1,188 @@
+@import url("/css/link_styles.css");
+@import url("/css/font_styles.css");
+@import url("/css/grid_styles.css");
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(212, 209, 213);
+}
+
+nav{
+    position:sticky;
+    top:0;
+    width: 100%;
+    height:50px;
+    background-color: rgb(42, 48, 46);
+    overflow: hidden;
+}
+
+nav > ul > li{
+    float:right;
+    text-align: center;
+    list-style: none;
+    padding: 0 2%;
+    font: bold 1rem Arial;
+}
+
+.card{
+    height:90%;
+    grid-area: pic;
+    border-radius: 5%;
+    border: 1.5px solid rgb(203, 202, 202);
+    box-shadow:5px 5px 5px rgb(194, 191, 191) ;
+}
+
+.card-btn {
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+    float: right;
+    border-radius: 15% 15% 15% 15%;
+}
+
+#selfie{
+    width: 100%;
+    height: 90%;
+    border-radius: 5% 5% 0% 0%;
+}
+
+.story{
+    grid-area: gal;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.snippet{
+    font: 1rem;
+    margin:auto;
+    width: 30%;
+    height: auto;
+}
+
+.gallery{
+    width: 75%;
+    grid-area: explain;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 150px;
+    height:75px;
+    margin: 5px;
+}
+
+.pic{
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid rgb(91, 90, 90);
+    border-top: 1px solid rgb(179, 178, 178);
+    margin: 2px;
+    text-align: center;
+}
+
+div.pic{
+    box-shadow:5px 5px 5px rgb(194, 191, 191);
+}
+
+.pic > img {
+    width:100px;
+    height:100px;
+    overflow-x: hidden;
+}
+
+.nested-grid{
+    grid-area: site;
+    display:flex;
+    flex-direction: row;
+}
+
+button{
+    margin: 20px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(72, 76, 122);
+    font-size: 14px;
+    height: 38px;
+    padding: 8px 24px;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg,#fff,#f5f5fa);
+    box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+    transition: all .2s ease-out;
+}
+
+button:hover{
+    box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+}
+
+.btn-container {
+    height: 70px;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 359px) {
+    body{
+        width:500px;
+    }
+
+    .card{
+        height:600px;
+    }
+
+    .container{
+        background-color:white;
+        display: grid;
+        width: 100%;
+        height:auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        " pic pic pic pic "
+        ". explain explain explain"
+        " gal gal gal gal"
+        "ft ft ft ft";
+}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+    body{
+        width:100%;
+    }
+
+    .card{
+        height:600px;
+        width:100%;
+    }
+
+    .container{
+        background-color:white;
+        display: grid;
+        width: 100%;
+        height:auto;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-areas: 
+        " pic pic pic pic pic"
+        ". explain explain explain ."
+        " gal gal gal gal gal"
+        "ft ft ft ft ft";
+    }
+    .nested-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
