@@ -41,7 +41,7 @@ nav > ul > li{
 .card-btn {
     display: block;
     margin: 0 auto;
-    padding-top: 0;
+    padding-top: 10px;
     float: right;
     border-radius: 15% 15% 15% 15%;
 }
@@ -139,7 +139,7 @@ button:hover{
     }
 
     .card{
-        height:600px;
+        height:800px;
     }
 
     .container{
@@ -163,7 +163,7 @@ button:hover{
     }
 
     .card{
-        height:600px;
+        height:800px;
         width:100%;
     }
 
